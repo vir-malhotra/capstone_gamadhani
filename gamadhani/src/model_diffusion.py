@@ -284,6 +284,7 @@ class UNet(UNetBase):
         self.ckpt = ckpt
         self.strides_prod = np.prod(strides)
         self.loss_w_padding = loss_w_padding
+        self.inp_dim = inp_dim
 
         if log_grad_norms_every is not None:    
             assert log_grad_norms_every > 0, "log_grad_norms_every must be greater than 0"
