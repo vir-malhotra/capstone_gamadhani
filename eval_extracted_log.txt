@@ -1,0 +1,132 @@
+Loaded checkpoint: epoch=39, val_loss=0.1544
+HMRBeatDataset [val]: 11 recordings, 106 windows
+Val windows: 106
+Loaded GT beats for 12 recordings
+  [1/106] uid=23008  beats=60
+  [2/106] uid=23008  beats=60
+  [3/106] uid=23008  beats=60
+  [4/106] uid=23008  beats=60
+  [5/106] uid=23008  beats=55
+  [6/106] uid=23008  beats=60
+  [7/106] uid=23008  beats=60
+  [8/106] uid=23008  beats=60
+  [9/106] uid=23008  beats=55
+  [10/106] uid=23008  beats=60
+  [11/106] uid=21013  beats=10
+  [12/106] uid=21013  beats=10
+  [13/106] uid=21013  beats=15
+  [14/106] uid=21013  beats=10
+  [15/106] uid=21013  beats=15
+  [16/106] uid=21013  beats=10
+  [17/106] uid=21013  beats=10
+  [18/106] uid=21013  beats=15
+  [19/106] uid=21013  beats=10
+  [20/106] uid=21013  beats=15
+  [21/106] uid=20020  beats=110
+  [22/106] uid=20020  beats=125
+  [23/106] uid=20020  beats=125
+  [24/106] uid=20020  beats=130
+  [25/106] uid=20020  beats=125
+  [26/106] uid=20020  beats=130
+  [27/106] uid=20020  beats=130
+  [28/106] uid=20020  beats=130
+  [29/106] uid=20020  beats=126
+  [30/106] uid=21042  beats=205
+  [31/106] uid=21042  beats=215
+  [32/106] uid=21042  beats=210
+  [33/106] uid=21042  beats=215
+  [34/106] uid=21042  beats=220
+  [35/106] uid=21042  beats=217
+  [36/106] uid=21042  beats=218
+  [37/106] uid=21042  beats=220
+  [38/106] uid=21042  beats=220
+  [39/106] uid=20037  beats=200
+  [40/106] uid=20037  beats=215
+  [41/106] uid=20037  beats=210
+  [42/106] uid=20037  beats=210
+  [43/106] uid=20037  beats=215
+  [44/106] uid=20037  beats=220
+  [45/106] uid=20037  beats=210
+  [46/106] uid=20037  beats=220
+  [47/106] uid=20037  beats=230
+  [48/106] uid=20027  beats=165
+  [49/106] uid=20027  beats=165
+  [50/106] uid=20027  beats=168
+  [51/106] uid=20027  beats=167
+  [52/106] uid=20027  beats=170
+  [53/106] uid=20027  beats=170
+  [54/106] uid=20027  beats=175
+  [55/106] uid=20027  beats=170
+  [56/106] uid=20027  beats=165
+  [57/106] uid=20027  beats=170
+  [58/106] uid=20018  beats=110
+  [59/106] uid=20018  beats=110
+  [60/106] uid=20018  beats=110
+  [61/106] uid=20018  beats=115
+  [62/106] uid=20018  beats=110
+  [63/106] uid=20018  beats=110
+  [64/106] uid=20018  beats=110
+  [65/106] uid=20018  beats=110
+  [66/106] uid=20018  beats=110
+  [67/106] uid=20018  beats=110
+  [68/106] uid=20012  beats=50
+  [69/106] uid=20012  beats=45
+  [70/106] uid=20012  beats=50
+  [71/106] uid=20012  beats=50
+  [72/106] uid=20012  beats=45
+  [73/106] uid=20012  beats=50
+  [74/106] uid=20012  beats=45
+  [75/106] uid=20012  beats=50
+  [76/106] uid=20012  beats=45
+  [77/106] uid=20012  beats=50
+  [78/106] uid=22006  beats=50
+  [79/106] uid=22006  beats=60
+  [80/106] uid=22006  beats=55
+  [81/106] uid=22006  beats=60
+  [82/106] uid=22006  beats=55
+  [83/106] uid=22006  beats=60
+  [84/106] uid=22006  beats=55
+  [85/106] uid=22006  beats=60
+  [86/106] uid=22006  beats=60
+  [87/106] uid=22006  beats=55
+  [88/106] uid=21007  beats=10
+  [89/106] uid=21007  beats=15
+  [90/106] uid=21007  beats=10
+  [91/106] uid=21007  beats=10
+  [92/106] uid=21007  beats=10
+  [93/106] uid=21007  beats=15
+  [94/106] uid=21007  beats=10
+  [95/106] uid=21007  beats=10
+  [96/106] uid=21007  beats=15
+  [97/106] uid=21007  beats=10
+  [98/106] uid=20042  beats=217
+  [99/106] uid=20042  beats=238
+  [100/106] uid=20042  beats=239
+  [101/106] uid=20042  beats=236
+  [102/106] uid=20042  beats=235
+  [103/106] uid=20042  beats=245
+  [104/106] uid=20042  beats=235
+  [105/106] uid=20042  beats=240
+  [106/106] uid=20042  beats=244
+/usr/lib/python3/dist-packages/requests/__init__.py:89: RequestsDependencyWarning: urllib3 (2.2.3) or chardet (3.0.4) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+/home/vm2426/.local/lib/python3.8/site-packages/x_transformers/x_transformers.py:445: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled = False)
+/home/vm2426/.local/lib/python3.8/site-packages/x_transformers/x_transformers.py:469: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled = False)
+/home/vm2426/beat-conditioned-GaMaDHaNi/gamadhani/utils/generate_utils.py:25: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  ckpt = torch.load(ckpt, map_location=device)
+/home/vm2426/.local/lib/python3.8/site-packages/sklearn/base.py:348: InconsistentVersionWarning: Trying to unpickle estimator QuantileTransformer from version 1.2.2 when using version 1.3.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+evaluate_beat_alignment_extracted.py:169: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  ckpt = torch.load(BEST_CKPT, map_location=device)
+
+=======================================================
+Condition                  F1   Prec    Rec  Onsets
+-------------------------------------------------------
+gt_conditioned          0.282  0.389  0.287    55.9
+shuffled_beat           0.202  0.321  0.205    52.2
+unconditioned           0.204  0.333  0.204    52.6
+=======================================================
+Saved beat_alignment_results.json

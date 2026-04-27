@@ -1,0 +1,298 @@
+
+Loaded GT beats model: 116 windows
+Checkpoint: epoch=67, val_loss=0.1569
+  [21/116]  [22/116]  [23/116]  [24/116]  [25/116]  [26/116]  [27/116]  [28/116]  [29/116]  [30/116]  [31/116]  [32/116]  [33/116]  [34/116]  [35/116]  [36/116]  [37/116]  [38/116]  [39/116]  [70/116]  [71/116]  [72/116]  [73/116]  [74/116]  [75/116]  [76/116]  [77/116]  [78/116]  [79/116]  [80/116]  [81/116]  [82/116]  [83/116]  [84/116]  [85/116]  [86/116]  [87/116]  [88/116]  [89/116]  [90/116]  [91/116]  [92/116]  [93/116]  [94/116]  [95/116]  [96/116]  [97/116]  [98/116]  [99/116]  [100/116]  [101/116]  [102/116]  [103/116]  [104/116]  [105/116]  [106/116]  [107/116]  [108/116]  [109/116]  [110/116]  [111/116]  [112/116]  [113/116]  [114/116]  [115/116]  [116/116]
+
+Done. Summarizing GT beats model...
+
+======================================================================
+PHASE DISTRIBUTION — GT beats model
+======================================================================
+Condition    Rayleigh R   Near-beat%   N phases
+--------------------------------------------------
+  gt              0.1447        0.266      12164
+  shuf            0.0156        0.203      10912
+  zero            0.0111        0.196       7416
+
+  Bootstrap CI on GT−shuf CC gap:
+  Observed: +0.0098  95% CI: [+0.0047, +0.0146]  Significant: YES
+
+Laya                 N   CC gap    CI lo    CI hi   R(gt)  R(shuf)  NB%(gt)
+------------------------------------------------------------------------
+  drut              188   +0.0116   +0.0060   +0.0171   0.1527    0.0157     0.271
+  drut/madhya        36   +0.0199   +0.0079   +0.0321   0.1966    0.0738     0.252
+  madhya             40   -0.0078   -0.0222   +0.0051   0.0346    0.0345     0.246
+
+  Phase histograms (GT beats model = GT beats model):
+
+  GT (n=12164):
+    0.03 | ████████████████████ 0.104 ← beat
+    0.08 | ██████████████       0.072
+    0.12 | ██████████████       0.074
+    0.18 | ██████████           0.050
+    0.23 | █████████            0.049
+    0.28 | ██████████           0.054
+    0.33 | ████████             0.042
+    0.38 | ██████               0.034
+    0.43 | ████████             0.041
+    0.47 | ███████              0.036
+    0.53 | █████████            0.046
+    0.58 | █████████            0.047
+    0.62 | ███████              0.039
+    0.68 | ████████             0.045
+    0.73 | ███████              0.035
+    0.78 | ████████             0.043
+    0.83 | █████████            0.048
+    0.88 | █████████            0.046
+    0.93 | ██████████           0.052
+    0.98 | ████████             0.043
+
+  SHUF (n=10912):
+    0.03 | █████████████        0.068 ← beat
+    0.08 | █████████            0.049
+    0.12 | ███████████          0.056
+    0.18 | ████████             0.041
+    0.23 | ██████████           0.053
+    0.28 | ███████████          0.059
+    0.33 | █████████            0.049
+    0.38 | ████████             0.042
+    0.43 | █████████            0.047
+    0.47 | ████████             0.044
+    0.53 | ███████████          0.057
+    0.58 | ███████████          0.056
+    0.62 | ████████             0.042
+    0.68 | ██████████           0.052
+    0.73 | ████████             0.042
+    0.78 | ██████████           0.051
+    0.83 | ██████████           0.051
+    0.88 | ██████████           0.050
+    0.93 | ██████████           0.054
+    0.98 | ███████              0.037
+
+  ZERO (n=7416):
+    0.03 | █████████████        0.068 ← beat
+    0.08 | ████████             0.045
+    0.12 | ██████████           0.052
+    0.18 | █████████            0.048
+    0.23 | █████████            0.048
+    0.28 | ███████████          0.059
+    0.33 | █████████            0.047
+    0.38 | ████████             0.044
+    0.43 | █████████            0.049
+    0.47 | ████████             0.042
+    0.53 | ███████████          0.056
+    0.58 | ██████████           0.053
+    0.62 | ████████             0.044
+    0.68 | ██████████           0.055
+    0.73 | █████████            0.046
+    0.78 | ███████████          0.058
+    0.83 | ██████████           0.050
+    0.88 | █████████            0.049
+    0.93 | █████████            0.049
+    0.98 | ███████              0.039
+
+Loaded Extracted beats model (vs GT): 116 windows
+Checkpoint: epoch=39, val_loss=0.1544
+  [21/116]  [22/116]  [23/116]  [24/116]  [25/116]  [26/116]  [27/116]  [28/116]  [29/116]  [30/116]  [31/116]  [32/116]  [33/116]  [34/116]  [35/116]  [36/116]  [37/116]  [38/116]  [39/116]  [70/116]  [71/116]  [72/116]  [73/116]  [74/116]  [75/116]  [76/116]  [77/116]  [78/116]  [79/116]  [80/116]  [81/116]  [82/116]  [83/116]  [84/116]  [85/116]  [86/116]  [87/116]  [88/116]  [89/116]  [90/116]  [91/116]  [92/116]  [93/116]  [94/116]  [95/116]  [96/116]  [97/116]  [98/116]  [99/116]  [100/116]  [101/116]  [102/116]  [103/116]  [104/116]  [105/116]  [106/116]  [107/116]  [108/116]  [109/116]  [110/116]  [111/116]  [112/116]  [113/116]  [114/116]  [115/116]  [116/116]
+
+Done. Summarizing Extracted beats model (vs GT)...
+
+======================================================================
+PHASE DISTRIBUTION — Extracted beats model (vs GT)
+======================================================================
+Condition    Rayleigh R   Near-beat%   N phases
+--------------------------------------------------
+  gt              0.0536        0.233      11698
+  shuf            0.0253        0.191      11503
+  zero            0.0144        0.199      11620
+
+  Bootstrap CI on GT−shuf CC gap:
+  Observed: +0.0005  95% CI: [-0.0038, +0.0046]  Significant: NO
+
+Laya                 N   CC gap    CI lo    CI hi   R(gt)  R(shuf)  NB%(gt)
+------------------------------------------------------------------------
+  drut              188   +0.0015   -0.0040   +0.0069   0.0489    0.0273     0.229
+  drut/madhya        36   -0.0026   -0.0114   +0.0078   0.0614    0.0423     0.208
+  madhya             40   -0.0016   -0.0111   +0.0094   0.0769    0.0259     0.275
+
+  Phase histograms (GT beats model = Extracted beats model (vs GT)):
+
+  GT (n=11698):
+    0.03 | ███████████████      0.077 ← beat
+    0.08 | ████████             0.044
+    0.12 | ██████████           0.052
+    0.18 | ███████              0.039
+    0.23 | █████████            0.048
+    0.28 | ███████████          0.056
+    0.33 | █████████            0.048
+    0.38 | ████████             0.042
+    0.43 | ██████████           0.051
+    0.47 | ███████              0.039
+    0.53 | ██████████           0.053
+    0.58 | ██████████           0.052
+    0.62 | ████████             0.041
+    0.68 | █████████            0.049
+    0.73 | ███████              0.037
+    0.78 | █████████            0.049
+    0.83 | ██████████           0.052
+    0.88 | ██████████           0.052
+    0.93 | █████████████        0.067
+    0.98 | ██████████           0.051
+
+  SHUF (n=11503):
+    0.03 | █████████████        0.065 ← beat
+    0.08 | █████████            0.046
+    0.12 | ███████████          0.056
+    0.18 | ████████             0.042
+    0.23 | ██████████           0.050
+    0.28 | ███████████          0.058
+    0.33 | ██████████           0.052
+    0.38 | █████████            0.046
+    0.43 | ██████████           0.055
+    0.47 | ████████             0.044
+    0.53 | ████████████         0.061
+    0.58 | ███████████          0.058
+    0.62 | █████████            0.046
+    0.68 | ██████████           0.054
+    0.73 | ███████              0.040
+    0.78 | █████████            0.048
+    0.83 | ██████████           0.051
+    0.88 | █████████            0.046
+    0.93 | █████████            0.046
+    0.98 | ███████              0.038
+
+  ZERO (n=11620):
+    0.03 | █████████████        0.068 ← beat
+    0.08 | █████████            0.049
+    0.12 | ██████████           0.053
+    0.18 | ████████             0.042
+    0.23 | █████████            0.047
+    0.28 | ██████████           0.055
+    0.33 | █████████            0.049
+    0.38 | ████████             0.044
+    0.43 | ██████████           0.052
+    0.47 | ████████             0.043
+    0.53 | ███████████          0.056
+    0.58 | ██████████           0.053
+    0.62 | ████████             0.044
+    0.68 | ███████████          0.057
+    0.73 | █████████            0.048
+    0.78 | ██████████           0.055
+    0.83 | ███████████          0.055
+    0.88 | ████████             0.044
+    0.93 | █████████            0.049
+    0.98 | ███████              0.036
+
+Loaded Extracted beats model (vs Extracted): 120 windows
+Checkpoint: epoch=39, val_loss=0.1544
+  [21/120]  [22/120]  [23/120]  [24/120]  [25/120]  [26/120]  [27/120]  [28/120]  [29/120]  [30/120]  [31/120]  [32/120]  [33/120]  [34/120]  [35/120]  [36/120]  [37/120]  [38/120]  [39/120]  [40/120]  [71/120]  [72/120]  [73/120]  [74/120]  [75/120]  [76/120]  [77/120]  [78/120]  [79/120]  [80/120]  [81/120]  [82/120]  [83/120]  [84/120]  [85/120]  [86/120]  [87/120]  [88/120]  [89/120]  [90/120]  [91/120]  [92/120]  [93/120]  [94/120]  [95/120]  [96/120]  [97/120]  [98/120]  [99/120]  [100/120]  [101/120]  [102/120]  [103/120]  [104/120]  [105/120]  [106/120]  [107/120]  [108/120]  [109/120]  [110/120]  [111/120]  [112/120]  [113/120]  [114/120]  [115/120]  [116/120]  [117/120]  [118/120]  [119/120]  [120/120]/usr/lib/python3/dist-packages/requests/__init__.py:89: RequestsDependencyWarning: urllib3 (2.2.3) or chardet (3.0.4) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+/home/vm2426/.local/lib/python3.8/site-packages/x_transformers/x_transformers.py:445: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled = False)
+/home/vm2426/.local/lib/python3.8/site-packages/x_transformers/x_transformers.py:469: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled = False)
+/home/vm2426/.local/lib/python3.8/site-packages/sklearn/base.py:348: InconsistentVersionWarning: Trying to unpickle estimator QuantileTransformer from version 1.2.2 when using version 1.3.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/vm2426/beat-conditioned-GaMaDHaNi/gamadhani/utils/generate_utils.py:25: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  ckpt = torch.load(ckpt, map_location=device)
+/home/vm2426/.local/lib/python3.8/site-packages/sklearn/base.py:348: InconsistentVersionWarning: Trying to unpickle estimator QuantileTransformer from version 1.2.2 when using version 1.3.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+evaluate_phase.py:332: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  ckpt  = torch.load(ckpt_path, map_location=device)
+evaluate_phase.py:332: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  ckpt  = torch.load(ckpt_path, map_location=device)
+evaluate_phase.py:332: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  ckpt  = torch.load(ckpt_path, map_location=device)
+
+
+Done. Summarizing Extracted beats model (vs Extracted)...
+
+======================================================================
+PHASE DISTRIBUTION — Extracted beats model (vs Extracted)
+======================================================================
+Condition    Rayleigh R   Near-beat%   N phases
+--------------------------------------------------
+  gt              0.0635        0.244      12906
+  shuf            0.0166        0.197      11715
+  zero            0.0078        0.193      10424
+
+  Bootstrap CI on GT−shuf CC gap:
+  Observed: +0.0028  95% CI: [-0.0018, +0.0072]  Significant: NO
+
+Laya                 N   CC gap    CI lo    CI hi   R(gt)  R(shuf)  NB%(gt)
+------------------------------------------------------------------------
+  drut              200   +0.0060   +0.0009   +0.0117   0.0658    0.0137     0.244
+  drut/madhya        40   -0.0092   -0.0229   +0.0006   0.0587    0.0139     0.242
+  madhya             40   -0.0016   -0.0118   +0.0076   0.0660    0.0547     0.244
+
+  Phase histograms (GT beats model = Extracted beats model (vs Extracted)):
+
+  GT (n=12906):
+    0.03 | █████████████████    0.089 ← beat
+    0.08 | █████████████        0.068
+    0.12 | ███████████          0.055
+    0.18 | ████████             0.044
+    0.23 | █████████            0.046
+    0.28 | █████████            0.048
+    0.33 | ██████████           0.050
+    0.38 | █████████            0.046
+    0.43 | █████████            0.048
+    0.47 | ████████             0.042
+    0.53 | ██████████           0.050
+    0.58 | ██████████           0.050
+    0.62 | ████████             0.042
+    0.68 | █████████            0.048
+    0.73 | ████████             0.044
+    0.78 | ████████             0.045
+    0.83 | ██████████           0.051
+    0.88 | █████████            0.045
+    0.93 | █████████            0.046
+    0.98 | ████████             0.042
+
+  SHUF (n=11715):
+    0.03 | ████████████         0.062 ← beat
+    0.08 | █████████            0.049
+    0.12 | ██████████           0.052
+    0.18 | █████████            0.049
+    0.23 | █████████            0.049
+    0.28 | ██████████           0.053
+    0.33 | ███████████          0.056
+    0.38 | ██████████           0.051
+    0.43 | ██████████           0.051
+    0.47 | ████████             0.045
+    0.53 | ███████████          0.057
+    0.58 | ██████████           0.050
+    0.62 | █████████            0.046
+    0.68 | █████████            0.048
+    0.73 | █████████            0.046
+    0.78 | ██████████           0.052
+    0.83 | █████████            0.050
+    0.88 | █████████            0.047
+    0.93 | ██████████           0.050
+    0.98 | ███████              0.038
+
+  ZERO (n=10424):
+    0.03 | ███████████          0.060 ← beat
+    0.08 | ██████████           0.051
+    0.12 | ███████████          0.056
+    0.18 | █████████            0.047
+    0.23 | █████████            0.049
+    0.28 | ██████████           0.055
+    0.33 | █████████            0.049
+    0.38 | ████████             0.041
+    0.43 | █████████            0.047
+    0.47 | █████████            0.047
+    0.53 | ███████████          0.058
+    0.58 | ██████████           0.054
+    0.62 | ██████████           0.052
+    0.68 | ██████████           0.052
+    0.73 | █████████            0.048
+    0.78 | ██████████           0.053
+    0.83 | ██████████           0.051
+    0.88 | █████████            0.046
+    0.93 | █████████            0.045
+    0.98 | ███████              0.038
+
+Saved phase_eval_results.json

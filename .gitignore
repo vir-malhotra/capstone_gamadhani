@@ -1,1 +1,21 @@
 __pycache__/
+*.pyc
+*.egg-info/
+
+# Model weights and checkpoints (too large)
+checkpoints/
+pretrained_models/
+
+# Generated audio/pitch outputs (too large)
+outputs/
+outputs_*/
+test_long_audio_out/
+test_long_audio_out_*/
+
+# Misc generated dirs
+gt_click_sanity/
+wandb/
+
+# Large self-contained files with embedded audio
+prime_comparison.html
+prime_comparison.ipynb

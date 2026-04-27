@@ -69,7 +69,7 @@ class AudioExample(object):
             buffer.data = np.asarray(array).astype(dtype).tobytes()
             buffer.shape.extend(array.shape)
             buffer.precision = DTYPE_TO_PRECISION[dtype]
-            buffer.sample_rate = sample_rate
+            buffer.sampling_rate = sample_rate
             buffer.data_path = data_path
             buffer.start_time = start_time
         if global_conditions is not None:

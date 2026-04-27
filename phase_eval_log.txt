@@ -1,0 +1,206 @@
+
+Loaded GT beats model: 116 windows
+Checkpoint: epoch=67, val_loss=0.1569
+  [1/116]  [2/116]  [3/116]  [4/116]  [5/116]  [6/116]  [7/116]  [8/116]  [9/116]  [10/116]  [11/116]  [12/116]  [13/116]  [14/116]  [15/116]  [16/116]  [17/116]  [18/116]  [19/116]  [20/116]  [21/116]  [22/116]  [23/116]  [24/116]  [25/116]  [26/116]  [27/116]  [28/116]  [29/116]  [30/116]  [31/116]  [32/116]  [33/116]  [34/116]  [35/116]  [36/116]  [37/116]  [38/116]  [39/116]  [41/116]  [43/116]  [46/116]  [48/116]  [50/116]  [51/116]  [52/116]  [54/116]  [55/116]  [56/116]  [58/116]  [59/116]  [60/116]  [61/116]  [62/116]  [64/116]  [65/116]  [66/116]  [67/116]  [68/116]  [70/116]  [71/116]  [72/116]  [73/116]  [74/116]  [75/116]  [76/116]  [77/116]  [78/116]  [79/116]  [80/116]  [81/116]  [82/116]  [83/116]  [84/116]  [85/116]  [86/116]  [87/116]  [88/116]  [89/116]  [90/116]  [91/116]  [92/116]  [93/116]  [94/116]  [95/116]  [96/116]  [97/116]  [98/116]  [99/116]  [100/116]  [101/116]  [102/116]  [103/116]  [104/116]  [105/116]  [106/116]  [107/116]  [108/116]  [109/116]  [110/116]  [111/116]  [112/116]  [113/116]  [114/116]  [115/116]  [116/116]
+
+Done. Summarizing GT beats model...
+
+======================================================================
+PHASE DISTRIBUTION — GT beats model
+======================================================================
+Condition    Rayleigh R   Near-beat%   N phases
+--------------------------------------------------
+  gt              0.1187        0.256      16524
+  shuf            0.0182        0.208      16148
+  zero            0.0277        0.194      11690
+
+  Bootstrap CI on GT−shuf CC gap:
+  Observed: +0.0065  95% CI: [-0.0004, +0.0135]  Significant: NO
+
+Laya                 N   CC gap    CI lo    CI hi   R(gt)  R(shuf)  NB%(gt)
+------------------------------------------------------------------------
+  drut              188   +0.0144   +0.0092   +0.0192   0.1451    0.0185     0.269
+  drut/madhya        36   +0.0169   +0.0059   +0.0292   0.1615    0.0208     0.240
+  madhya             40   +0.0065   -0.0049   +0.0193   0.1008    0.0247     0.272
+  vilambit          160   -0.0050   -0.0217   +0.0108   0.0862    0.0356     0.229
+
+  Phase histograms (GT beats model = GT beats model):
+
+  GT (n=16524):
+    0.03 | ███████████████████  0.096 ← beat
+    0.08 | █████████████        0.069
+    0.12 | █████████████        0.068
+    0.18 | █████████            0.045
+    0.23 | ██████████           0.054
+    0.28 | ██████████           0.052
+    0.33 | ████████             0.045
+    0.38 | ███████              0.038
+    0.43 | ████████             0.043
+    0.47 | ███████              0.036
+    0.53 | █████████            0.046
+    0.58 | ████████             0.041
+    0.62 | ███████              0.038
+    0.68 | ██████████           0.051
+    0.73 | ████████             0.043
+    0.78 | ██████████           0.051
+    0.83 | █████████            0.046
+    0.88 | ████████             0.044
+    0.93 | █████████            0.050
+    0.98 | ████████             0.045
+
+  SHUF (n=16148):
+    0.03 | █████████████        0.066 ← beat
+    0.08 | ██████████           0.054
+    0.12 | ██████████           0.055
+    0.18 | █████████            0.048
+    0.23 | █████████            0.048
+    0.28 | ██████████           0.054
+    0.33 | ██████████           0.051
+    0.38 | █████████            0.046
+    0.43 | █████████            0.048
+    0.47 | █████████            0.047
+    0.53 | ██████████           0.054
+    0.58 | ██████████           0.053
+    0.62 | █████████            0.048
+    0.68 | █████████            0.049
+    0.73 | █████████            0.048
+    0.78 | ████████             0.045
+    0.83 | █████████            0.049
+    0.88 | ████████             0.045
+    0.93 | ██████████           0.050
+    0.98 | ███████              0.040
+
+  ZERO (n=11690):
+    0.03 | ████████████         0.064 ← beat
+    0.08 | █████████            0.048
+    0.12 | █████████            0.049
+    0.18 | █████████            0.047
+    0.23 | █████████            0.049
+    0.28 | ██████████           0.053
+    0.33 | █████████            0.048
+    0.38 | ██████████           0.052
+    0.43 | ███████████          0.056
+    0.47 | █████████            0.048
+    0.53 | ███████████          0.059
+    0.58 | ███████████          0.056
+    0.62 | ████████             0.044
+    0.68 | ██████████           0.055
+    0.73 | ████████             0.043
+    0.78 | █████████            0.049
+    0.83 | █████████            0.049
+    0.88 | █████████            0.045
+    0.93 | █████████            0.046
+    0.98 | ███████              0.039
+
+Loaded Extracted beats model: 116 windows
+Checkpoint: epoch=39, val_loss=0.1544
+  [1/116]  [2/116]  [3/116]  [4/116]  [5/116]  [6/116]  [7/116]  [8/116]  [9/116]  [10/116]  [11/116]  [12/116]  [13/116]  [14/116]  [15/116]  [16/116]  [17/116]  [18/116]  [19/116]  [20/116]  [21/116]  [22/116]  [23/116]  [24/116]  [25/116]  [26/116]  [27/116]  [28/116]  [29/116]  [30/116]  [31/116]  [32/116]  [33/116]  [34/116]  [35/116]  [36/116]  [37/116]  [38/116]  [39/116]  [41/116]  [43/116]  [46/116]  [48/116]  [50/116]  [51/116]  [52/116]  [54/116]  [55/116]  [56/116]  [58/116]  [59/116]  [60/116]  [61/116]  [62/116]  [64/116]  [65/116]  [66/116]  [67/116]  [68/116]  [70/116]  [71/116]  [72/116]  [73/116]  [74/116]  [75/116]  [76/116]  [77/116]  [78/116]  [79/116]  [80/116]  [81/116]  [82/116]  [83/116]  [84/116]  [85/116]  [86/116]  [87/116]  [88/116]  [89/116]  [90/116]  [91/116]  [92/116]  [93/116]  [94/116]  [95/116]  [96/116]  [97/116]  [98/116]  [99/116]  [100/116]  [101/116]  [102/116]  [103/116]  [104/116]  [105/116]  [106/116]  [107/116]  [108/116]  [109/116]  [110/116]  [111/116]  [112/116]  [113/116]  [114/116]  [115/116]  [116/116]/usr/lib/python3/dist-packages/requests/__init__.py:89: RequestsDependencyWarning: urllib3 (2.2.3) or chardet (3.0.4) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+/home/vm2426/.local/lib/python3.8/site-packages/x_transformers/x_transformers.py:445: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled = False)
+/home/vm2426/.local/lib/python3.8/site-packages/x_transformers/x_transformers.py:469: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled = False)
+/home/vm2426/.local/lib/python3.8/site-packages/sklearn/base.py:348: InconsistentVersionWarning: Trying to unpickle estimator QuantileTransformer from version 1.2.2 when using version 1.3.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/home/vm2426/beat-conditioned-GaMaDHaNi/gamadhani/utils/generate_utils.py:25: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  ckpt = torch.load(ckpt, map_location=device)
+/home/vm2426/.local/lib/python3.8/site-packages/sklearn/base.py:348: InconsistentVersionWarning: Trying to unpickle estimator QuantileTransformer from version 1.2.2 when using version 1.3.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+evaluate_phase.py:323: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  ckpt  = torch.load(ckpt_path, map_location=device)
+evaluate_phase.py:323: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  ckpt  = torch.load(ckpt_path, map_location=device)
+
+
+Done. Summarizing Extracted beats model...
+
+======================================================================
+PHASE DISTRIBUTION — Extracted beats model
+======================================================================
+Condition    Rayleigh R   Near-beat%   N phases
+--------------------------------------------------
+  gt              0.0639        0.232      17752
+  shuf            0.0080        0.200      17529
+  zero            0.0066        0.196      15539
+
+  Bootstrap CI on GT−shuf CC gap:
+  Observed: +0.0045  95% CI: [-0.0010, +0.0099]  Significant: NO
+
+Laya                 N   CC gap    CI lo    CI hi   R(gt)  R(shuf)  NB%(gt)
+------------------------------------------------------------------------
+  drut              188   -0.0020   -0.0065   +0.0026   0.0691    0.0144     0.232
+  drut/madhya        36   +0.0038   -0.0069   +0.0147   0.0778    0.0330     0.211
+  madhya             40   -0.0022   -0.0126   +0.0081   0.0563    0.0266     0.242
+  vilambit          160   +0.0139   +0.0017   +0.0270   0.0607    0.0171     0.235
+
+  Phase histograms (GT beats model = Extracted beats model):
+
+  GT (n=17752):
+    0.03 | ██████████████       0.072 ← beat
+    0.08 | █████████            0.048
+    0.12 | ██████████           0.055
+    0.18 | ████████             0.043
+    0.23 | █████████            0.047
+    0.28 | █████████            0.049
+    0.33 | █████████            0.045
+    0.38 | ████████             0.043
+    0.43 | ████████             0.043
+    0.47 | █████████            0.045
+    0.53 | ██████████           0.051
+    0.58 | █████████            0.047
+    0.62 | █████████            0.045
+    0.68 | █████████            0.049
+    0.73 | █████████            0.045
+    0.78 | ██████████           0.053
+    0.83 | ██████████           0.053
+    0.88 | ██████████           0.052
+    0.93 | ████████████         0.061
+    0.98 | ██████████           0.054
+
+  SHUF (n=17529):
+    0.03 | ████████████         0.064 ← beat
+    0.08 | █████████            0.047
+    0.12 | ██████████           0.053
+    0.18 | ████████             0.044
+    0.23 | ██████████           0.051
+    0.28 | ██████████           0.054
+    0.33 | █████████            0.047
+    0.38 | ████████             0.042
+    0.43 | ██████████           0.055
+    0.47 | █████████            0.046
+    0.53 | ██████████           0.055
+    0.58 | ███████████          0.055
+    0.62 | ████████             0.043
+    0.68 | ██████████           0.052
+    0.73 | ████████             0.044
+    0.78 | █████████            0.047
+    0.83 | ███████████          0.058
+    0.88 | ██████████           0.050
+    0.93 | ██████████           0.051
+    0.98 | ████████             0.040
+
+  ZERO (n=15539):
+    0.03 | █████████████        0.065 ← beat
+    0.08 | ████████             0.045
+    0.12 | ██████████           0.055
+    0.18 | █████████            0.045
+    0.23 | █████████            0.050
+    0.28 | ██████████           0.051
+    0.33 | ██████████           0.050
+    0.38 | █████████            0.048
+    0.43 | ██████████           0.050
+    0.47 | ████████             0.045
+    0.53 | ██████████           0.054
+    0.58 | ██████████           0.052
+    0.62 | █████████            0.046
+    0.68 | █████████            0.049
+    0.73 | ██████████           0.051
+    0.78 | ██████████           0.054
+    0.83 | ██████████           0.052
+    0.88 | █████████            0.049
+    0.93 | █████████            0.050
+    0.98 | ███████              0.039
+
+Saved phase_eval_results.json

@@ -1,0 +1,155 @@
+/usr/lib/python3/dist-packages/requests/__init__.py:89: RequestsDependencyWarning: urllib3 (2.2.3) or chardet (3.0.4) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+/home/vm2426/.local/lib/python3.8/site-packages/x_transformers/x_transformers.py:445: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled = False)
+/home/vm2426/.local/lib/python3.8/site-packages/x_transformers/x_transformers.py:469: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled = False)
+wandb: Currently logged in as: vir-malhotra (vir-malhotra-new-york-university). Use `wandb login --relogin` to force relogin
+wandb: - Waiting for wandb.init()...wandb: \ Waiting for wandb.init()...wandb: | Waiting for wandb.init()...wandb: Tracking run with wandb version 0.17.9
+wandb: Run data is saved locally in /home/vm2426/beat-conditioned-GaMaDHaNi/wandb/run-20260405_153406-d3e33s41
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run hmr-extracted-beats-1ch
+wandb: ⭐️ View project at https://wandb.ai/vir-malhotra-new-york-university/beat-conditioned-gamadhani
+wandb: 🚀 View run at https://wandb.ai/vir-malhotra-new-york-university/beat-conditioned-gamadhani/runs/d3e33s41
+Trainable params: 111,581,953
+HMRBeatDataset [train]: 102 recordings, 989 windows
+HMRBeatDataset [val]: 11 recordings, 106 windows
+/home/vm2426/beat-conditioned-GaMaDHaNi/gamadhani/utils/generate_utils.py:25: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  ckpt = torch.load(ckpt, map_location=device)
+/home/vm2426/.local/lib/python3.8/site-packages/sklearn/base.py:348: InconsistentVersionWarning: Trying to unpickle estimator QuantileTransformer from version 1.2.2 when using version 1.3.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+epoch   1/100  train=0.2473  val=0.1771  lr=1.00e-04
+  → new best val loss: 0.1771  saved checkpoints/hmr_extracted_beats/best.ckpt
+epoch   2/100  train=0.2260  val=0.1686  lr=9.99e-05
+  → new best val loss: 0.1686  saved checkpoints/hmr_extracted_beats/best.ckpt
+epoch   3/100  train=0.2251  val=0.2186  lr=9.98e-05
+epoch   4/100  train=0.2391  val=0.1883  lr=9.96e-05
+epoch   5/100  train=0.2450  val=0.1914  lr=9.94e-05
+epoch   6/100  train=0.2274  val=0.1797  lr=9.91e-05
+epoch   7/100  train=0.2276  val=0.1732  lr=9.88e-05
+epoch   8/100  train=0.2268  val=0.1665  lr=9.84e-05
+  → new best val loss: 0.1665  saved checkpoints/hmr_extracted_beats/best.ckpt
+epoch   9/100  train=0.2399  val=0.1782  lr=9.80e-05
+epoch  10/100  train=0.2142  val=0.1923  lr=9.76e-05
+epoch  11/100  train=0.2271  val=0.1910  lr=9.70e-05
+epoch  12/100  train=0.2256  val=0.1717  lr=9.65e-05
+epoch  13/100  train=0.2266  val=0.1733  lr=9.59e-05
+epoch  14/100  train=0.2194  val=0.1827  lr=9.52e-05
+epoch  15/100  train=0.2207  val=0.1717  lr=9.46e-05
+epoch  16/100  train=0.2083  val=0.1820  lr=9.38e-05
+epoch  17/100  train=0.2405  val=0.1838  lr=9.30e-05
+epoch  18/100  train=0.2251  val=0.1944  lr=9.22e-05
+epoch  19/100  train=0.2216  val=0.1673  lr=9.14e-05
+epoch  20/100  train=0.2033  val=0.1937  lr=9.05e-05
+epoch  21/100  train=0.2114  val=0.1749  lr=8.95e-05
+epoch  22/100  train=0.2147  val=0.2009  lr=8.85e-05
+epoch  23/100  train=0.2252  val=0.1786  lr=8.75e-05
+epoch  24/100  train=0.2145  val=0.1680  lr=8.64e-05
+epoch  25/100  train=0.2300  val=0.2029  lr=8.54e-05
+epoch  26/100  train=0.2286  val=0.1902  lr=8.42e-05
+epoch  27/100  train=0.2241  val=0.2048  lr=8.31e-05
+epoch  28/100  train=0.2151  val=0.1872  lr=8.19e-05
+epoch  29/100  train=0.2108  val=0.1741  lr=8.06e-05
+epoch  30/100  train=0.2149  val=0.1632  lr=7.94e-05
+  → new best val loss: 0.1632  saved checkpoints/hmr_extracted_beats/best.ckpt
+epoch  31/100  train=0.2069  val=0.1701  lr=7.81e-05
+epoch  32/100  train=0.2094  val=0.1657  lr=7.68e-05
+epoch  33/100  train=0.2162  val=0.1716  lr=7.55e-05
+epoch  34/100  train=0.2155  val=0.1825  lr=7.41e-05
+epoch  35/100  train=0.2180  val=0.2078  lr=7.27e-05
+epoch  36/100  train=0.2057  val=0.1838  lr=7.13e-05
+epoch  37/100  train=0.2074  val=0.2041  lr=6.99e-05
+epoch  38/100  train=0.2102  val=0.1887  lr=6.84e-05
+epoch  39/100  train=0.2183  val=0.1544  lr=6.69e-05
+  → new best val loss: 0.1544  saved checkpoints/hmr_extracted_beats/best.ckpt
+epoch  40/100  train=0.2162  val=0.1733  lr=6.55e-05
+epoch  41/100  train=0.2148  val=0.2099  lr=6.39e-05
+epoch  42/100  train=0.2046  val=0.1822  lr=6.24e-05
+epoch  43/100  train=0.2038  val=0.1979  lr=6.09e-05
+epoch  44/100  train=0.2187  val=0.1635  lr=5.94e-05
+epoch  45/100  train=0.2068  val=0.1729  lr=5.78e-05
+epoch  46/100  train=0.2066  val=0.1822  lr=5.63e-05
+epoch  47/100  train=0.2171  val=0.1658  lr=5.47e-05
+epoch  48/100  train=0.2172  val=0.1899  lr=5.31e-05
+epoch  49/100  train=0.2183  val=0.1682  lr=5.16e-05
+epoch  50/100  train=0.2125  val=0.1974  lr=5.00e-05
+epoch  51/100  train=0.2084  val=0.1659  lr=4.84e-05
+epoch  52/100  train=0.2105  val=0.1899  lr=4.69e-05
+epoch  53/100  train=0.2090  val=0.1823  lr=4.53e-05
+epoch  54/100  train=0.2057  val=0.1695  lr=4.37e-05
+epoch  55/100  train=0.1971  val=0.1903  lr=4.22e-05
+epoch  56/100  train=0.2131  val=0.1906  lr=4.06e-05
+epoch  57/100  train=0.2134  val=0.1812  lr=3.91e-05
+epoch  58/100  train=0.2060  val=0.1726  lr=3.76e-05
+epoch  59/100  train=0.2063  val=0.1898  lr=3.61e-05
+epoch  60/100  train=0.2087  val=0.1710  lr=3.45e-05
+epoch  61/100  train=0.2072  val=0.1856  lr=3.31e-05
+epoch  62/100  train=0.2031  val=0.1783  lr=3.16e-05
+epoch  63/100  train=0.2030  val=0.1905  lr=3.01e-05
+epoch  64/100  train=0.1980  val=0.1707  lr=2.87e-05
+epoch  65/100  train=0.1971  val=0.1816  lr=2.73e-05
+epoch  66/100  train=0.2100  val=0.1737  lr=2.59e-05
+epoch  67/100  train=0.2081  val=0.1667  lr=2.45e-05
+epoch  68/100  train=0.2103  val=0.1692  lr=2.32e-05
+epoch  69/100  train=0.2167  val=0.1768  lr=2.19e-05
+epoch  70/100  train=0.2192  val=0.1820  lr=2.06e-05
+epoch  71/100  train=0.2074  val=0.1980  lr=1.94e-05
+epoch  72/100  train=0.1973  val=0.1741  lr=1.81e-05
+epoch  73/100  train=0.2088  val=0.1647  lr=1.69e-05
+epoch  74/100  train=0.2064  val=0.1730  lr=1.58e-05
+epoch  75/100  train=0.2112  val=0.1851  lr=1.46e-05
+epoch  76/100  train=0.2100  val=0.1617  lr=1.36e-05
+epoch  77/100  train=0.2077  val=0.1659  lr=1.25e-05
+epoch  78/100  train=0.2043  val=0.1849  lr=1.15e-05
+epoch  79/100  train=0.2053  val=0.1737  lr=1.05e-05
+epoch  80/100  train=0.2031  val=0.1761  lr=9.55e-06
+epoch  81/100  train=0.2095  val=0.1662  lr=8.65e-06
+epoch  82/100  train=0.2055  val=0.1742  lr=7.78e-06
+epoch  83/100  train=0.2093  val=0.1807  lr=6.96e-06
+epoch  84/100  train=0.2073  val=0.1898  lr=6.18e-06
+epoch  85/100  train=0.2123  val=0.1702  lr=5.45e-06
+epoch  86/100  train=0.2015  val=0.1719  lr=4.76e-06
+epoch  87/100  train=0.2092  val=0.1563  lr=4.11e-06
+epoch  88/100  train=0.2109  val=0.1907  lr=3.51e-06
+epoch  89/100  train=0.1991  val=0.1812  lr=2.96e-06
+epoch  90/100  train=0.2037  val=0.1784  lr=2.45e-06
+epoch  91/100  train=0.2049  val=0.1817  lr=1.99e-06
+epoch  92/100  train=0.2036  val=0.1915  lr=1.57e-06
+epoch  93/100  train=0.1993  val=0.1917  lr=1.20e-06
+epoch  94/100  train=0.1984  val=0.1935  lr=8.86e-07
+epoch  95/100  train=0.2189  val=0.1899  lr=6.16e-07
+epoch  96/100  train=0.2150  val=0.1812  lr=3.94e-07
+epoch  97/100  train=0.2083  val=0.1874  lr=2.22e-07
+epoch  98/100  train=0.2064  val=0.1785  lr=9.87e-08
+epoch  99/100  train=0.2161  val=0.1834  lr=2.47e-08
+wandb: - 0.014 MB of 0.014 MB uploadedwandb: \ 0.014 MB of 0.014 MB uploadedwandb: | 0.014 MB of 0.014 MB uploadedwandb: / 0.014 MB of 0.014 MB uploadedwandb: - 0.014 MB of 0.014 MB uploadedwandb: \ 0.014 MB of 0.014 MB uploadedwandb: | 0.014 MB of 0.014 MB uploadedwandb: / 0.014 MB of 0.014 MB uploadedwandb: - 0.023 MB of 0.030 MB uploadedwandb: \ 0.038 MB of 0.038 MB uploadedwandb: | 0.038 MB of 0.038 MB uploadedwandb: / 0.038 MB of 0.038 MB uploadedwandb: - 0.038 MB of 0.038 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:            epoch ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:               lr ███████▇▇▇▇▇▆▆▆▆▅▅▅▅▄▄▄▄▃▃▃▃▂▂▂▂▂▁▁▁▁▁▁▁
+wandb:             step ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb: train/loss_epoch █▅▅▅▅▅▃▅▃▅▅▄▂▄▂▄▃▄▂▄▃▂▃▂▂▁▃▄▁▂▂▂▂▂▃▁▂▁▃▂
+wandb:  train/loss_step ▄▂▅▆▄█▃▃▄▃▄▃▂▃▁▂▂▂▄▆▂▂▂▂▁▂▄▁▃▁▃▁▁▄▁▃▁▄▄▁
+wandb:         val/loss ▃█▄▂▅▃▄▅▃▄▅▅▃▄▄▁▇▂▄▂▂▃▅▅▄▃▂▃▃▃▂▃▃▅▁▄▅▅▅▄
+wandb: 
+wandb: Run summary:
+wandb:            epoch 100
+wandb:               lr 0.0
+wandb:             step 6200
+wandb: train/loss_epoch 0.20777
+wandb:  train/loss_step 0.12005
+wandb:         val/loss 0.18112
+wandb: 
+wandb: 🚀 View run hmr-extracted-beats-1ch at: https://wandb.ai/vir-malhotra-new-york-university/beat-conditioned-gamadhani/runs/d3e33s41
+wandb: ⭐️ View project at: https://wandb.ai/vir-malhotra-new-york-university/beat-conditioned-gamadhani
+wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260405_153406-d3e33s41/logs
+wandb: WARNING wandb version 0.25.1 is available!  To upgrade, please run:
+wandb: WARNING  $ pip install wandb --upgrade
+wandb: WARNING The new W&B backend becomes opt-out in version 0.18.0; try it out with `wandb.require("core")`! See https://wandb.me/wandb-core for more information.
+epoch 100/100  train=0.2078  val=0.1811  lr=0.00e+00
+
+Done. Best val loss: 0.1544
+/usr/lib/python3/dist-packages/requests/__init__.py:89: RequestsDependencyWarning: urllib3 (2.2.3) or chardet (3.0.4) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
