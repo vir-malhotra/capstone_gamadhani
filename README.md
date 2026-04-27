@@ -216,11 +216,30 @@ Pitch normalization pipeline (matches pretrained GaMaDHaNi):
 
 ## Installation
 
+Requires **Python 3.10**.
+
 ```bash
 git clone <this-repo>
 cd beat-conditioned-GaMaDHaNi
 pip install -r requirements.txt
-pip install x-transformers==1.30.2  # required — newer versions break checkpoint loading
+```
+
+**Note:** `x-transformers` must be pinned to `1.30.2` (already in `requirements.txt`). Newer versions rename the LayerNorm weights and break checkpoint loading.
+
+Additional packages required for specific workflows:
+
+```bash
+# Vocal separation (extract_pitch_hmr.py)
+pip install demucs
+
+# Pitch extraction (extract_pitch_hmr.py)
+pip install crepe
+
+# Beat tracking evaluation (evaluate_beat_tracker.py)
+pip install madmom
+
+# Evaluation scripts (evaluate_onset_cc.py, evaluate_phase.py, etc.)
+pip install scipy
 ```
 
 Pretrained GaMaDHaNi weights are downloaded automatically from HuggingFace (`kmaneeshad/GaMaDHaNi`) on first run. The paths used throughout:
