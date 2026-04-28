@@ -290,9 +290,7 @@ python train_beat_conditioned.py \
 `--reset_best_val` allows tracking a fresh best checkpoint from this run.  
 Best checkpoint typically around epoch 126, val loss ≈ 0.167.
 
-### Why not just train with CFG from epoch 1?
-
-Without Phase 1, the model never develops strong beat conditioning — CFG training with a randomly-initialized beat projection and no clean conditioning baseline converges to a weak signal. The two-phase approach mirrors how the 12s model was trained.
+The two-phase approach is how the 12s model was trained.
 
 ### Training for 20s windows
 
@@ -714,25 +712,27 @@ Generated `prime400_zero` condition (pitch prime + zero beat) for 6 audible-temp
 
 ## Key Findings
 
+> All findings below are scoped to the evaluation metrics used in this project (beat alignment F1, GT−shuffled gap, Rayleigh R, and peak cross-correlation). They may not generalise to other metrics or evaluation settings.
+
 1. **CFG is essential.** Dropout ≠ CFG. Whole-signal zeroing during training + two-pass inference gives 3.4× better gap (+0.303 vs +0.089).
 
 2. **Two-phase training matters.** Phase 1 (no CFG) builds strong beat conditioning; Phase 2 adds null examples. Skipping Phase 1 or resuming with a stale LR schedule produces much weaker results.
 
-3. **12s beats 20s.** Two independent 20s runs both cap at ~+0.107. Sparser beat events per window is the likely bottleneck. 12s model is final.
+3. **12s beats 20s** (as measured by GT−shuf gap). Two independent 20s runs both cap at ~+0.107. Sparser beat events per window is the likely bottleneck.
 
-4. **Guidance scale 3.0 is optimal.** gs=5 slightly over-sharpens.
+4. **Guidance scale 3.0 is optimal** for this metric. gs=5 slightly over-sharpens.
 
-5. **Vilambit must be excluded.** Vocalists in slow tempo do not onset-align to beats — validated in GT data. All phase analysis is drut+madhya only.
+5. **Vilambit excluded from phase analysis.** GT data shows vocalists in vilambit do not onset-align to beats under our F1 metric — negative gap in ground truth. Results for drut+madhya only.
 
-6. **Beat augmentation hurts.** Section dropout (p=0.3) reduced gap from +0.089 to +0.035.
+6. **Beat augmentation reduced the gap** from +0.089 to +0.035 (section dropout p=0.3). May behave differently under other training or metric configurations.
 
-7. **Extracted beats are too noisy.** Beat Transformer–extracted beats produce near-zero CC gap and non-significant Rayleigh R. GT annotations are required for training.
+7. **Extracted beats produced near-zero gap and non-significant Rayleigh R** in our experiments. GT annotations were required to get a meaningful training signal under these metrics.
 
-8. **Pitch prime slightly dampens beat responsiveness.** gap +0.236 vs noprime +0.307 — pitch prime constrains generation but competes with beat conditioning.
+8. **Pitch prime slightly reduced the GT−shuf gap** (+0.236 vs noprime +0.307) — the prime constrains melodic trajectory and appears to compete with beat conditioning under this metric.
 
-9. **Beat prime is misleading.** 95% silence in QT-space; inflates both GT and shuffled F1 by encoding rhythmic structure in the prime regardless of the conditioning signal. Dropped.
+9. **Beat prime is misleading** for this evaluation. 95% silence in QT-space inflates both GT and shuffled F1, making the gap unreliable as a measure of beat responsiveness.
 
-10. **Onset representation: continuous |Δcents| ≈ binary 25c for CC.** ISMIR 2021 stable-note segmentation shows false positives on wrong-beat condition — unreliable.
+10. **Continuous |Δcents| ≈ binary 25c for CC.** ISMIR 2021 stable-note segmentation showed false positives on the wrong-beat condition in our setup.
 
 11. **Stage 2 is length-agnostic.** `UNetPitchConditioned.forward()` accepts arbitrary sequence lengths. Bypass `sample_cfg`'s hardcoded `seq_len=750` with a custom sampling loop. Mel rate = 62.5 frames/s.
 
@@ -787,7 +787,7 @@ Generated `prime400_zero` condition (pitch prime + zero beat) for 6 audible-temp
 | `PROCESS.md` | Comprehensive results reference, glossary, all tables |
 | `IMPLEMENTATION_NOTES.md` | Chronological experiment log with raw numbers |
 
-### Google Drive (`gdrive:GaMaDHaNi-samples/`)
+### Google Drive ([GaMaDHaNi-samples/](https://drive.google.com/drive/folders/1CgBsSsK5L6gZi4_V8iSNj8x1WVuu_zER?usp=sharing))
 
 | Folder/File | Contents |
 |-------------|---------|
