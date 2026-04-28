@@ -157,7 +157,7 @@ python analyze_by_laya_sections.py
 
 ### Source Data
 
-**HMR (Hindustani Music Recordings):** 151 vocal recordings with CREPE f0 annotations and Beat Transformer beat annotations.
+**HMR (Hindustani Music Recordings):** 151 vocal recordings with CREPE f0 annotations and Beat Transformer beat annotations. Dataset available at [https://zenodo.org/records/1264742](https://zenodo.org/records/1264742).
 
 **Filtering criteria:**
 - Instrument code `V` (vocal lead) only
@@ -299,6 +299,13 @@ Without Phase 1, the model never develops strong beat conditioning — CFG train
 Replace `--seq_len 1200 --batch_size 16` with `--seq_len 2000 --batch_size 8`. Two independent runs showed the 20s gap is fundamentally capped at ~+0.107 regardless of training procedure — the 12s model is superior.
 
 ### Existing checkpoints
+
+The best model checkpoint is available on HuggingFace: [vir-malhotra/beat-conditioned-gamadhani](https://huggingface.co/vir-malhotra/beat-conditioned-gamadhani)
+
+```bash
+# Download best checkpoint
+huggingface-cli download vir-malhotra/beat-conditioned-gamadhani best.ckpt --local-dir checkpoints/hmr_gt_beats_cfg/
+```
 
 | Checkpoint | Val Loss | Notes |
 |-----------|----------|-------|
